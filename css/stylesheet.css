@@ -3,13 +3,15 @@
 @import url(./fontello.css);
 
 /* 숨김 제목 및 숨김 콘텐츠 */
-.a11y-hidden {
+.a11y-hidden, legend {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: 0;
   overflow: hidden;
   clip-path: polygon(0 0, 0 0, 0 0);
+  clip: rect(0 0 0 0);
+  clip: rect(0,0,0,0);
 }
 
 body *,
@@ -237,10 +239,40 @@ a {
 }
 
 .group1 {
-  background: blueviolet;
   width: 250px;
 }
+/* 자습 코드 */
+/* .login {
+  background: linear-gradient(
+    to right, 
+    #f2682e 0%, 
+    #f2682e 35%, 
+    #edaa2f 80%, 
+    #edaa2f 100%
+    );
+    box-shadow: 8px 8px gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+  .login-heading {
+    color: yellow;
+    margin: 10px;
+  }
 
+  fieldset {
+    background: white;
+    border-radius: 10px;
+    border: rgba(0, 0, 0, 0);
+
+  } */
+
+
+
+
+
+
+
+/* 여기까지 */
 .group2 {
   background: lightgreen;
   width: 380px;
