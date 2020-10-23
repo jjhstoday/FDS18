@@ -3,7 +3,8 @@
 @import url(./fontello.css);
 
 /* 숨김 제목 및 숨김 콘텐츠 */
-.a11y-hidden, legend {
+.a11y-hidden,
+legend {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -11,7 +12,7 @@
   overflow: hidden;
   clip-path: polygon(0 0, 0 0, 0 0);
   clip: rect(0 0 0 0);
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
 }
 
 body *,
@@ -90,13 +91,11 @@ a {
 }
 
 .menu {
-  background: linear-gradient(
-    to bottom, 
-    #edaa2f 0%, 
-    #f2682e 35%, 
-    #f2682e 70%, 
-    #edaa2f 100%
-    );
+  background: linear-gradient(to bottom,
+      #edaa2f 0%,
+      #f2682e 35%,
+      #f2682e 70%,
+      #edaa2f 100%);
   border-top: 2px solid currentColor;
   border-radius: 0 0 5px 5px;
   margin: 10px 0 0 0;
@@ -105,10 +104,12 @@ a {
   height: 47px;
   padding-left: 220px;
 }
+
 .menu-item {
   position: relative;
   float: left;
 }
+
 .menu-button {
   cursor: pointer;
   font-size: 1.6rem;
@@ -116,21 +117,24 @@ a {
   font-weight: 700;
   background: transparent;
   line-height: 45px;
-  display: block; /* ? */
+  display: block;
   padding: 0 20px;
   border: 0;
   border-left: 2px solid rgba(255, 255, 255, 0.5);
-  text-shadow: 1px 0px 0 #000, 0px 1px 0 #000, -1px 0px 0  #000, 0px -1px 0  #000;
+  text-shadow: 1px 0px 0 #000, 0px 1px 0 #000, -1px 0px 0 #000, 0px -1px 0 #000;
 
 }
+
 .menu-act .menu-button {
   color: #ff0;
 }
+
 .menu-act .menu-button::after {
   content: "";
   display: block;
   border-top: 2px solid #000;
 }
+
 .sub-menu {
   margin: 0;
   padding-left: 0;
@@ -140,14 +144,17 @@ a {
   top: 47px;
   white-space: nowrap;
 }
+
 .sub-menu li,
 .sub-menu a {
   display: inline-block;
 }
+
 .sub-menu a {
   padding: 8px 0;
   margin-right: 10px;
 }
+
 .sub-menu a::before {
   content: '\f192';
   font-family: 'fontello';
@@ -156,45 +163,59 @@ a {
   width: 1em;
   margin-right: .2em;
 }
+
 .sub-menu a:hover::before,
 .sub-menu a:focus::before {
   content: '\e800';
 }
+
 .menu-act .sub-menu {
   display: block;
 }
-.sub-menu1, .sub-menu2, .sub-menu3 {
+
+.sub-menu1,
+.sub-menu2,
+.sub-menu3 {
   left: 0;
 }
-.sub-menu4, .sub-menu5, .sub-menu6 {
+
+.sub-menu4,
+.sub-menu5,
+.sub-menu6 {
   right: 0;
 }
+
 /* 텍스트 및 배경 애니메이션 - 비주얼 */
 @keyframes textAni {
   0% {
     font-size: 12px;
     color: rgba(0, 0, 0, 0);
-    transform: translate(0,0);
+    transform: translate(0, 0);
   }
+
   100% {
     font-size: 24px;
     color: rgba(0, 0, 0, 1);
-    transform: translate(400px,75px);
+    transform: translate(400px, 75px);
   }
 }
+
 @keyframes bgAni {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
 }
+
 .visual {
   position: relative;
   height: 120px;
 }
-.visual::before, 
+
+.visual::before,
 .visual::after {
   content: "";
   position: absolute;
@@ -205,19 +226,20 @@ a {
   background-repeat: no-repeat;
   animation: bgAni 2000ms alternate infinite ease-in-out;
 }
+
 .visual::before {
-  /* animation-direction: alternate-reverse; --장지혜 코드--*/
-  background-image: url(./images/ani_flower_01.png), 
-                    url(./images/ani_flower_02.png);
+  background-image: url(./images/ani_flower_01.png),
+    url(./images/ani_flower_02.png);
   background-position: 0 -10px, 670px 0;
 }
+
 .visual::after {
-  /* animation-direction: alternate; --장지혜 코드--*/
-  background-image: url(./images/ani_flower_03.png), 
-                    url(./images/ani_flower_04.png);
+  background-image: url(./images/ani_flower_03.png),
+    url(./images/ani_flower_04.png);
   background-position: 300px 0, 800px 0;
   animation-delay: 1000ms;
 }
+
 .visual-text {
   width: 500px;
   margin: 0;
@@ -226,8 +248,9 @@ a {
   animation-duration: 3000ms;
   animation-fill-mode: forwards;
 }
+
 .main {
-  background: skyblue;
+  background: #fff;
   padding: 30px 15px;
   overflow: hidden;
   min-height: 450px;
@@ -241,46 +264,195 @@ a {
 .group1 {
   width: 250px;
 }
-/* 자습 코드 */
-/* .login {
-  background: linear-gradient(
-    to right, 
-    #f2682e 0%, 
-    #f2682e 35%, 
-    #edaa2f 80%, 
-    #edaa2f 100%
-    );
-    box-shadow: 8px 8px gray;
-    border-radius: 10px;
-    padding: 10px;
-}
-  .login-heading {
-    color: yellow;
-    margin: 10px;
-  }
-
-  fieldset {
-    background: white;
-    border-radius: 10px;
-    border: rgba(0, 0, 0, 0);
-
-  } */
 
 
 
 
-
-
-
-/* 여기까지 */
 .group2 {
-  background: lightgreen;
   width: 380px;
 }
 
 .group3 {
-  background: tomato;
   width: 190px;
+}
+
+/* 로그인 */
+/* 자습 코드
+.login {
+  background: radial-gradient(ellipse at center,
+  #edaa2f 0%,
+  #f2682e 100%,
+  #edaa2f 100%);
+  );
+  box-shadow: 8px 8px gray;
+  border-radius: 7px;
+  padding: 10px 10px;
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.login-heading {
+  color: yellow;
+  margin: 5px 0 0 0;
+  padding-left: 10px;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.login-form {
+  background: #fff;
+  border-radius: 7px 7px 0 0;
+  position: relative;
+}
+
+fieldset {
+  border: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid gray;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.user-email,
+.user-pw {
+  display: block;
+  margin-top: 7px;
+}
+
+fieldset label {
+  display: inline-block;
+  width: 4em;
+}
+fieldset input {
+  display: inline-block;
+  width: 8em; 
+}
+.btn-login {
+  background: #f2682e;
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  padding: 0;
+  margin: 15px 5px 0 0;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.login-member {
+  padding: 10px 10px;
+  margin: 0;
+  list-style: none;
+  border-radius: 0 0 7px 7px;
+  display: flex;
+  justify-content: center;
+  top: 110px;
+  background: #fff;
+}
+
+.icon-right-open {
+  color: #f2682e;
+}
+
+.login-member li a {
+  padding: 0;
+  margin: 0;
+} */
+/* 여기까지 */
+
+/* 강의 코드 */
+.login {
+  background: radial-gradient(circle at right top, #edaa2f, #f2682e);
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 0 #ccc;
+  padding: 15px 10px;
+}
+
+.login-heading {
+  margin: 0;
+  color: #ff0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-indent: 10px;
+}
+
+.user-email *,
+.user-pw * {
+  vertical-align: middle;
+}
+
+.user-email,
+.user-pw {
+  margin-bottom: 5px;
+}
+
+.login-form {
+  margin-top: 10px;
+  padding: 10px 10px 0 10px;
+  background: #fff;
+  border-radius: 5px 5px 0 0;
+}
+
+.login-form label {
+  width: 4em;
+  display: inline-block;
+}
+
+.login-form input {
+  width: 90px;
+  height: 22px;
+  border: 1px solid #ccc;
+  padding: 1px 1px 1px .5em;
+}
+
+.btn-login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  padding: 0 5px;
+  border: 0;
+  border-radius: 3px;
+  background-color: #f2682e;
+  color: #fff;
+}
+
+.login-form fieldset {
+  position: relative;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  padding: 0;
+  padding-bottom: 5px;
+  margin: 0;
+}
+/* fieldset에 position값 설정해야 로그인 버튼 padding or margin값 따로 주지 않아도 위치 지정 가능 */
+
+.login-member {
+  background: #fff;
+  padding: 2px 10px;
+  margin: 0;
+  list-style: none;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: space-between;
+  letter-spacing: -1px;
+}
+
+.login-member li {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.login-member .icon-right-open {
+  color: #f2682e;
+}
+
+.login-member a {
+  display: block;
+  padding: 8px 0;
 }
 
 .slogan {
