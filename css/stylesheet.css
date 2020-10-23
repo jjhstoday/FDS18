@@ -265,9 +265,6 @@ a {
   width: 250px;
 }
 
-
-
-
 .group2 {
   width: 380px;
 }
@@ -426,6 +423,7 @@ fieldset input {
   padding-bottom: 5px;
   margin: 0;
 }
+
 /* fieldset에 position값 설정해야 로그인 버튼 padding or margin값 따로 주지 않아도 위치 지정 가능 */
 
 .login-member {
@@ -453,6 +451,27 @@ fieldset input {
 .login-member a {
   display: block;
   padding: 8px 0;
+}
+
+/* 유효성 검사 배너 */
+.validation-list {
+  margin: 25px 0 0 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.validation-list a {
+  display: block;
+  border-radius: 20px;
+  border: 1px solid #aaa;
+  background: url(./images/validation_icon.png) no-repeat 25px 50% / 20px 20px,
+    linear-gradient(to bottom, #eee, #ccc);
+  padding: 8px 10px 8px 50px;
+  margin-top: 10px;
+}
+
+.validation-list a:hover {
+  color: #f00;
 }
 
 .slogan {
