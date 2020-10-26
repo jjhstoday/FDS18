@@ -408,11 +408,10 @@ a {
 
 .term-list {
   margin: 15px 0 0 0;
-  background: yellow;
 }
-.term-list > div {
+
+.term-list>div {
   overflow: hidden;
-  background: skyblue;
 }
 
 .term-list div:nth-child(even) {
@@ -421,7 +420,6 @@ a {
 
 .term-list-subject,
 .term-list-brief {
-  background: pink;
   float: right;
   width: 145px;
 }
@@ -431,7 +429,6 @@ a {
 }
 
 .term-list-thumbnail {
-  background: lime;
   float: left;
 }
 
@@ -440,7 +437,6 @@ a {
 }
 
 .term-list-brief {
-  background: orange;
   float: right;
   width: 145px;
   line-height: 1.5em;
@@ -458,6 +454,47 @@ a {
 
 .term-list div:nth-child(even) .term-list-thumbnail {
   float: right;
+}
+
+/* 검색 폼 */
+.search-form {
+  background: #ccc linear-gradient(#ccc, #eee);
+  border: 1px solid #aaa;
+  border-bottom-color: #fff;
+  border-radius: 15px 15px 0 0;
+  padding: 15px 25px 10px;
+}
+
+.search-form fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.search-form-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-form [name="search"] {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 1px 1px 1px 0.5em;
+  height: 22px;
+  /* flex-grow: 1; */
+  width: 190px;
+  /* margin: 0 5px; */
+}
+
+.btn-search {
+  background-color: #333;
+  border: 1px solid #aaa;
+  color: #fff;
+  border-radius: 3px;
+  height: 22px;
+  padding: 0 10px;
 }
 
 .slogan {
