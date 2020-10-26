@@ -273,91 +273,7 @@ a {
   width: 190px;
 }
 
-/* 로그인 */
-/* 자습 코드
-.login {
-  background: radial-gradient(ellipse at center,
-  #edaa2f 0%,
-  #f2682e 100%,
-  #edaa2f 100%);
-  );
-  box-shadow: 8px 8px gray;
-  border-radius: 7px;
-  padding: 10px 10px;
-  font-size: 1.3rem;
-  position: relative;
-}
-
-.login-heading {
-  color: yellow;
-  margin: 5px 0 0 0;
-  padding-left: 10px;
-  font-size: 1.6rem;
-  font-weight: 700;
-}
-
-.login-form {
-  background: #fff;
-  border-radius: 7px 7px 0 0;
-  position: relative;
-}
-
-fieldset {
-  border: rgba(0, 0, 0, 0);
-  border-bottom: 1px solid gray;
-  margin-top: 15px;
-  padding: 10px;
-}
-
-.user-email,
-.user-pw {
-  display: block;
-  margin-top: 7px;
-}
-
-fieldset label {
-  display: inline-block;
-  width: 4em;
-}
-fieldset input {
-  display: inline-block;
-  width: 8em; 
-}
-.btn-login {
-  background: #f2682e;
-  border: none;
-  border-radius: 7px;
-  color: #fff;
-  padding: 0;
-  margin: 15px 5px 0 0;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.login-member {
-  padding: 10px 10px;
-  margin: 0;
-  list-style: none;
-  border-radius: 0 0 7px 7px;
-  display: flex;
-  justify-content: center;
-  top: 110px;
-  background: #fff;
-}
-
-.icon-right-open {
-  color: #f2682e;
-}
-
-.login-member li a {
-  padding: 0;
-  margin: 0;
-} */
-/* 여기까지 */
-
-/* 강의 코드 */
+/* 로그인 영역 */
 .login {
   background: radial-gradient(circle at right top, #edaa2f, #f2682e);
   border-radius: 5px;
@@ -472,6 +388,76 @@ fieldset input {
 
 .validation-list a:hover {
   color: #f00;
+}
+
+/* 웹 관련 용어 */
+.term {
+  border: 1px solid #aaa;
+  background: linear-gradient(#ccc, #eee);
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.term-heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.term-list {
+  margin: 15px 0 0 0;
+  background: yellow;
+}
+.term-list > div {
+  overflow: hidden;
+  background: skyblue;
+}
+
+.term-list div:nth-child(even) {
+  margin-top: 15px;
+}
+
+.term-list-subject,
+.term-list-brief {
+  background: pink;
+  float: right;
+  width: 145px;
+}
+
+.term-list-subject {
+  color: #296897;
+}
+
+.term-list-thumbnail {
+  background: lime;
+  float: left;
+}
+
+.term-list-thumbnail img {
+  display: block;
+}
+
+.term-list-brief {
+  background: orange;
+  float: right;
+  width: 145px;
+  line-height: 1.5em;
+
+}
+
+.term-list dd {
+  margin-left: 0;
+}
+
+.term-list div:nth-child(even) .term-list-subject,
+.term-list div:nth-child(even) .term-list-brief {
+  float: left;
+}
+
+.term-list div:nth-child(even) .term-list-thumbnail {
+  float: right;
 }
 
 .slogan {
