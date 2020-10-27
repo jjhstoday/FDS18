@@ -393,7 +393,7 @@ a {
 /* 웹 관련 용어 */
 .term {
   border: 1px solid #aaa;
-  background: linear-gradient(#ccc, #eee);
+  background: #ccc linear-gradient(#ccc, #eee);
   padding: 15px;
   margin-top: 20px;
   border-radius: 5px;
@@ -440,7 +440,6 @@ a {
   float: right;
   width: 145px;
   line-height: 1.5em;
-
 }
 
 .term-list dd {
