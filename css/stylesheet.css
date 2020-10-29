@@ -685,6 +685,11 @@ a {
 
 .event {
   position: relative;
+  border-bottom: 1px solid #aaa;
+}
+
+.related {
+  padding-top: 10px;
 }
 
 .event-heading,
@@ -733,51 +738,32 @@ a {
   font-style: normal;
 }
 
-/* 자습 코드 */
-/* .gradient-box {
-  background: silver linear-gradient(#ccc, #eee);
-  padding: 15px 10px;
+.related-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 0 0;
+  background: #fff;
+  height: 27px;
   border: 1px solid #aaa;
   border-radius: 5px;
-  position: relative;
+  overflow: hidden;
+  transition: height 400ms, padding 400ms 400ms;
 }
 
-.event-heading {
- background: yellow;
- margin: 0;
- font-size: 1.6rem;
+.related-list:hover {
+  height: 147px;
+  padding: 10px 0;
 }
 
-.point-color {
-  color: #f2682e;
+.related-list li {
+  padding: 2px 5px 3px 5px;
 }
 
-.btn-event {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  border: 1px solid #ccc;
+.related-list a {
+  display: block;
+  line-height: 20px;
+  padding-left: 20px;
 }
-
-.btn-prev,
-.btn-next {
-  color: rgba(0, 0, 0, 0);
-  font-size: 0;
-  width: 19px;
-  height: 18px;
-  border: 0;
-}
-
-.btn-prev {
-  background-image: url(./images/back_forward.png);
-  background-size: cover;
-}
-
-.btn-next {
-  background-image: url(./images/back_forward.png);
-  background-size: cover;
-  background-position: right;
-} */
 
 .slogan {
   background: orange;
